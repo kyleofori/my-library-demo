@@ -16,13 +16,13 @@ public class LibraryInterface {
 
     public Book constructNewBook() {
         Scanner bookScanner = new Scanner(System.in);
-        Book bookToAdd = new Book();
         System.out.println("What is the book's title?");
-        bookToAdd.setTitle(bookScanner.nextLine());
+        String title = (bookScanner.nextLine());
         System.out.println("Who is the book's author?");
-        bookToAdd.setAuthor(bookScanner.nextLine());
+        String author = (bookScanner.nextLine());
         System.out.println("How many pages does the book have?");
-        bookToAdd.setNumberOfPages(bookScanner.nextInt());
+        int numberOfPages = (bookScanner.nextInt());
+        Book bookToAdd = new Book(author,title,numberOfPages);
         return bookToAdd;
     }
 
