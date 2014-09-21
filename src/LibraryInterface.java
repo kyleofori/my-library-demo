@@ -38,6 +38,10 @@ public class LibraryInterface {
         System.out.println("Please enter a number between 1-5.");
     }
 
+    public void printExitMessage() {
+        System.out.println("Exiting program. Goodbye!");
+    }
+
     public void displayInfoForBook(Book book) {
         System.out.println(book.getTitle() + " by " +
                 book.getAuthor() + ", " +

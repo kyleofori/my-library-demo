@@ -31,6 +31,7 @@ public class LibraryDemo {
             } else if(selection.equals("4")) {
                 myLibrary.displayAllBooks();
             } else if(selection.equals("5")) {
+                myInterface.printExitMessage();
                 break;
             } else {
                 myInterface.promptForNextEntry();
